@@ -227,7 +227,7 @@
     margin: 0 auto;
   }
   .hero-area.style-three .hero-transparent-text-wrap {
-    margin-top: 25px;
+    margin-top: 5px;
   }
   .hero-area.style-three .hero-transparent-text-wrap .section-subtitle {
     line-height: 24px;
@@ -237,7 +237,7 @@
   }
   .hero-area.style-three .hero-transparent-text-wrap .hero-transparent-text {
     left: 4px;
-    font-size: 25.2vw;
+    top: -150px;
   }
   .about-area.style-one .about-content .about-subcontent {
     padding-left: 0;
