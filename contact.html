@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="akrail">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Link of CSS files -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/dark-theme.css">
+        
+        <title>Akrail - Stark auf Schiene, stark in der Logistik.</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body>
+
+       <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+        <!-- Theme Switcher Start -->
+        <div class="switch-theme-mode">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- Theme Switcher End -->
+
+        <!-- Custom Cursor -->
+        <div class="cursor"><span class="cursor-text"></span></div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- Navbar Start -->
+                <div class="navbar-area style-three position-relative" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper d-flex justify-content-between align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo-white.png" alt="Logo">
+                            </a>
+                            <div class="menu-area me-auto">
+                                <div class="overlay"></div>
+                                <nav class="menu">
+                                    <div class="menu-mobile-header">
+                                        <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                        <div class="menu-mobile-title"></div>
+                                        <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                    </div>
+                                    <ul class="menu-section p-0 mb-0 lh-1">
+                                        <li class="menu-item-has-children">
+                                            <li><a href="/index.html#werwirsind">Wer wir sind</a></li>
+                                           <li class="menu-item-has-children">
+                                            <li><a href="/index.html#about">Über uns</a></li>
+                                            <li class="menu-item-has-children">
+                                            <li><a href="/index.html#service">Service</a></li>
+                                            <li class="menu-item-has-children">
+                                            <li><a href="/index.html#merkmale">Merkmale</a></li>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <li><a href="careers.html">Karriere</a></li>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                <div class="option-item d-flex flex-wrap align-items-center">
+                                    <div class="mobile-options position-relative d-lg-none">
+                                        <button class="dropdown-toggle  text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-more-fill"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
+                                            <div class="dropdown-item">
+                                                <div class="contact-link d-flex flex-wrap align-items-center position-relative transition">
+                                                    <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/phone.svg" alt="Icon" class="transition"></span>
+                                                    <div>
+                                                        <span class="text-white d-block">Jetzt anrufen:</span>
+                                                        <span class="text_primary fw-semibold">+49 177 3316 33</span>
+                                                    </div>
+                                                    <a href="tel:6857886960" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Kontakt aufnehmen</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-link d-lg-flex flex-wrap align-items-center position-relative d-none transition">
+                                        <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/phone.svg" alt="Icon" class="transition"></span>
+                                        <div class="d-xl-inline d-none">
+                                            <span class="text-white d-block fw-semibold">Jetzt anrufen:</span>
+                                            <span style="color: #fff;" class="fw-semibold">+49 177 3316 33</span>
+                                        </div>
+                                        <a href="tel:6857886960" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                                <div class="option-item d-lg-block d-none">
+                                    <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Kontakt aufnehmen</span></a>
+                                </div>
+                                <div class="option-item d-lg-none">
+                                    <button type="button" class="menu-mobile-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar End -->
+
+                <!-- Breadcrumb Section Start -->
+                <div class="breadcrumb-area position-relative z-1">
+                    <img src="assets/img/breadcrumb/br-line-shape.png" alt="Shape" class="br-line-shape position-absolute top-0 start-0 w-100 h-100 z-n1">
+                    <img src="assets/img/breadcrumb/br-shape-1.png" alt="Shape" class="br-shape-one position-absolute z-n1 bounce">
+                    <img src="assets/img/breadcrumb/br-shape-2.png" alt="Shape" class="br-shape-two position-absolute bottom-0 z-n1 moveHorizontal">
+                    <div class="container-fluid px-xxl-5">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 text-center">
+                                <h2 style="color: #fff;" class="section-title style-one fw-black text-title">Kontakt</h2>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumb Section End -->
+
+                <!-- Contact Section Start -->
+                <div class="container ptb-120">
+                    <div class="row justify-content-center pb-90">
+                        <div class="col-xl-4">
+                            <div class="contact-card style-one bg-gray d-flex flex-wrap align-items-center round-30 mb-30">
+                                <div class="contact-icon bg_secondary d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/phone-black.svg" alt="Icon" class="transition"></div>
+                                <div class="contact-info">
+                                    <span class="font-optional fs-13 fw-bold d-block text-title ls-1">TELEFONNUMMER</span>
+                                    <a href="tel:67475867869202" class="text-para hover-text-primary transition">+49 177 3316 33</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="contact-card style-one bg-gray d-flex flex-wrap align-items-center round-30 mb-30">
+                                <div class="contact-icon bg_secondary d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/mail-black.svg" alt="Icon" class="transition"></div>
+                                <div class="contact-info">
+                                    <span class="font-optional fs-13 fw-bold d-block text-title ls-1">E-MAIL</span>
+                                    <a href="mailto:hello@renius.com" class="text-para hover-text-primary transition">info@akrail.de</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="contact-card style-one bg-gray d-flex flex-wrap align-items-center round-30 mb-30">
+                                <div class="contact-icon bg_secondary d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/pin-black.svg" alt="Icon" class="transition"></div>
+                                <div class="contact-info">
+                                    <span class="font-optional fs-13 fw-bold d-block text-title ls-1">STANDORT</span>
+                                    <span>Akrailstr, 471737 Duisburg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-lg-start align-items-center">
+                        <div class="col-lg-6 mb-md-20">
+                            <h2 class="section-title style-one text-title mb-30">Jetzt <span class="fw-black">Kontakt aufnehmen und gemeinsam</span> die Weichen für Ihren Erfolg stellen.</h2>
+                            <form action="#" class="comment-form form-wrapper round-10 p-0 mb-50" id="cmt-form">
+                                <div class="row gx-xl-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative mb-25">
+                                            <input type="text" required class="w-100 ht-50 bg-gray border-0 outline-0 round-5 text-para" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-25">
+                                            <input type="email" placeholder="Email" required class="w-100 ht-50 bg-gray border-0 outline-0 round-5 text-para">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-25">
+                                            <input type="text" placeholder="Betreff" required class="w-100 ht-50 bg-gray border-0 outline-0 round-5 text-para">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-25">
+                                            <textarea name="messages" id="messages" cols="30" rows="10" placeholder="Nachricht"  class="w-100 ht-152 bg-gray border-0 outline-0 round-5 text-para resize-0"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check checkbox style-one mb-25">
+                                            <input class="form-check-input" type="checkbox" id="test_2"
+                                            >
+                                            <label class="form-check-label" for="test_2" class="fw-medium">
+                                                Nutzungsbedingungen und Datenschutzerklärung akzeptieren
+                                            </label>
+                                        </div>
+                                        <div class="col-xl-5 col-md-6">
+                                            <button class="btn style-one d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Nachricht senden</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 ps-xxl-5">
+                            <div class="comp-map round-20">
+                                <img src="assets/img/duisburg.jpg" alt="Image" class="round-20 w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Details End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-two bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Menü</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="/index.html#werwirsind">Wer wir sind</a></li>
+                                        <li><a href="/index.html#about">Über uns</a></li>
+                                        <li><a href="/index.html#service">Service</a></li>
+                                        <li><a href="/index.html#merkmale">Merkmale</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Akrail</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><a href="impressum.html">Impressum</a></li>
+                                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="mailto:info@akrail.de">info@akrail.de</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:49177331633">+49 177 3316 33</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>A</span>
+                                    <span>K</span>
+                                    <span>R</span>
+                                    <span>A</span>
+                                    <span>I</span>
+                                    <span>L</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10">
+                                    <span class="text-alto fw-semibold me-2">Folge uns: </span>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-7 text-md-end text-center">
+                                <p class="copyright-text mb-0 text-white"><i class="ri-copyright-line"></i><span class="text_secondary fw-medium">Akril</span> 2025 </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <div id="progress-wrap" class="progress-wrap style-one">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </div>
+
+        <!-- Link of JS files -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/megamenu.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/fslightbox.js"></script>
+        <script src="assets/js/gsap.min.js"></script>
+        <script src="assets/js/scrollTrigger.min.js"></script>
+        <script src="assets/js/lenis.min.js"></script>
+        <script src="assets/js/scrollToPlugin.js"></script>
+        <script src="assets/js/SplitText.min.js"></script>
+        <script src="assets/js/customEase.js"></script>
+        <script src="assets/js/scrollcue.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

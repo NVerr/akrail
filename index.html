@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="akrail">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Link of CSS files -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/scrollcue.min.css">
+        <link rel="stylesheet" href="assets/css/remixicon.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/dark-theme.css">
+        
+        <title>Akrail - Stark auf Schiene, stark in der Logistik.</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body>
+
+       <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+        <!-- Theme Switcher Start -->
+        <div class="switch-theme-mode">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- Theme Switcher End -->
+
+        <!-- Custom Cursor -->
+        <div class="cursor"><span class="cursor-text"></span></div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- Navbar Start -->
+                <div class="navbar-area style-three position-relative" id="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper d-flex justify-content-between align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="assets/img/logo-white.png" alt="Logo">
+                            </a>
+                            <div class="menu-area me-auto">
+                                <div class="overlay"></div>
+                                <nav class="menu">
+                                    <div class="menu-mobile-header">
+                                        <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                        <div class="menu-mobile-title"></div>
+                                        <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                    </div>
+                                    <ul class="menu-section p-0 mb-0 lh-1">
+                                        <li class="menu-item-has-children">
+                                            <li><a href="#werwirsind">Wer wir sind</a></li>
+                                           <li class="menu-item-has-children">
+                                            <li><a href="#about">Über uns</a></li>
+                                            <li class="menu-item-has-children">
+                                            <li><a href="#service">Service</a></li>
+                                            <li class="menu-item-has-children">
+                                            <li><a href="#merkmale">Merkmale</a></li>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <li><a href="careers.html">Karriere</a></li>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                                <div class="option-item d-flex flex-wrap align-items-center">
+                                    <div class="mobile-options position-relative d-lg-none">
+                                        <button class="dropdown-toggle  text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            <i class="ri-more-fill"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
+                                            <div class="dropdown-item">
+                                                <div class="contact-link d-flex flex-wrap align-items-center position-relative transition">
+                                                    <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/phone.svg" alt="Icon" class="transition"></span>
+                                                    <div>
+                                                        <span class="text-white d-block">Jetzt anrufen:</span>
+                                                        <span class="text_primary fw-semibold">+49 177 3316 33</span>
+                                                    </div>
+                                                    <a href="tel:6857886960" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Kontakt aufnehmen</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-link d-lg-flex flex-wrap align-items-center position-relative d-none transition">
+                                        <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="assets/img/icons/phone.svg" alt="Icon" class="transition"></span>
+                                        <div class="d-xl-inline d-none">
+                                            <span class="text-white d-block fw-semibold">Jetzt anrufen:</span>
+                                            <span style="color: #fff;" class="fw-semibold">+49 177 3316 33</span>
+                                        </div>
+                                        <a href="tel:6857886960" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                    </div>
+                                </div>
+                                <div class="option-item d-lg-block d-none">
+                                    <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Kontakt aufnehmen</span></a>
+                                </div>
+                                <div class="option-item d-lg-none">
+                                    <button type="button" class="menu-mobile-trigger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar End -->
+
+                <!-- Hero Section Start -->
+                <div class="hero-area style-three position-relative overflow-hidden z-1">
+                    <div class="hero-bg bg-f position-absolute top-0 start-0 w-100 h-100 transition"></div>
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-6 col-md-7 pe-xxl-5">
+                                <div class="hero-content mb-35">
+                                    <h1 class="font-secondary fw-normal text-white mb-0" data-cue="slideInUp">Auf Schienen <span class="fw-black">stark</span> Für Generationen verlässlich.</h1>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 offset-xl-6 col-lg-5 offset-lg-7 col-md-4 offset-md-8 ps-xxl-5 ps-md-4">
+                                <div class="circle-text-wrap position-relative overflow-hidden z-1" data-cue="slideInUp"  data-delay="300">
+                                    <!-- Youtube Video Button <img src="assets/img/hero/circle-text-1.svg" alt="Circle Text" class="rotate position-relative z-1"> -->
+                                    <!-- <a data-fslightbox="" href="https://www.youtube.com/" class="play-icon position-absolute d-flex flex-column align-items-center justify-content-center rounded-circle z-1 bg_primary"><i class="ri-play-large-fill"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="hero-transparent-text-wrap">
+                                    <h2 class="hero-transparent-text font-secondary fw-black mb-0 d-flex flex-wrap align-items-center justify-content-between" data-cue="slideInUp" data-delay="500">
+                                        <span>A</span>
+                                        <span>K</span>
+                                        <span>R</span>
+                                        <span>A</span>
+                                        <span>I</span>
+                                        <span>L</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Section End -->
+
+                <!-- Feature Section Start -->
+                <div id="werwirsind" class="container pb-90">
+                    <div class="row align-items-end">
+                        <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center px-xxl-5">
+                            <h6 class="section-subtitle style-two d-inline-block fs-13 ls-1 font-optional fw-semibold position-relative text_para mb-25" data-cue="slideInUp">WER WIR SIND</h6>
+                            <h2 class="section-title style-one fw-normal text-title mb-40" data-cue="slideInUp" data-delay="300">Von der Idee bis zur Lieferung – <span class="fw-black">wir bringen Effizienz auf die Schiene.</span></h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="feature-card style-three position-relative round-20 transition mb-30">
+                                <div class="br-one position-absolute top-0 start-0"></div>
+                                <div class="br-two position-absolute bottom-0 start-0"></div>
+                                <div class="feature-img rounded-circle position-relative z-1 d-block mx-auto">
+                                    <img src="assets/img/features/zigzag-shape.svg" alt="Shape" class="position-absolute top-0 start-0 w-100 h-100 z-1">
+                                    <img src="assets/img/features/feature-img-1.jpg" alt="Image" class="rounded-circle">
+                                </div>
+                                <h3 class="fs-24 font-primary fw-black">Was wir tun</h3>
+                                <p>Wir bewegen Güter – und mit ihnen Fortschritt, Wachstum und Zukunft. </p>
+                                <a href="about.html" class="link style-one fw-semibold">Mehr erfahren <img src="assets/img/icons/right-arrow-small.svg" alt="Icon"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="feature-card style-four position-relative z-1 overflow-hidden round-20 mb-30">
+                                <div class="feature-info">
+                                    <h3 class="fs-24 font-primary fw-black" style="color: #fff;">Unsere Wirkung</h3>
+                                    <p style="color: #fff;">Mit Erfahrung und Leidenschaft gestalten wir Verbindungen, die einzigartig sind – so wie die Anforderungen unserer Kunden</p>
+                                    <a href="about.html" class="link style-one fw-semibold" style="color: #fff;">Mehr erfahren <img src="assets/img/icons/right-arrow-small.svg" alt="Icon"></a>
+                                </div>
+                                <img src="assets/img/features/feature-img-2.jpg" alt="Image" class="position-absolute bottom-0 start-0 z-n1 transition">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-cue="slideInUp">
+                            <div class="feature-card style-five bg-f position-relative overflow-hidden d-flex flex-column align-items-end justify-content-end round-20 z-1 mb-30">
+                                <div class="feature-info">
+                                    <h3 class="fs-24 font-primary fw-black text-white">Grundwerte</h3>
+                                    <p class="text-alto">Erfolg liegt in den Details. Unser Team setzt alles daran, höchste Standards zu liefern.</p>
+                                    <a href="about.html" class="link style-one fw-semibold" style="color: #fff;">Mehr erfahren<img src="assets/img/icons/right-arrow-small.svg" alt="Icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Section End -->
+
+                <!-- About Section Start -->
+                <div id="about" class="about-area style-three position-relative z-1 ptb-120">
+                     <div class="move-text-wrapper overflow-hidden mb-120">
+                        <div class="move-text style-two position-relative z-1">
+                            <ul class="list-unstyled mb-0">
+                                <li class="position-relative font-secondary">ZUVERLÄSSIGE LIEFERZEITEN</li>
+                                <li class="position-relative font-secondary">SICHERER GÜTERTRANSPORT</li>
+                                <li class="position-relative font-secondary">NACHHALTIGE LOGISTIK</li>
+                                <li class="position-relative font-secondary">EUROPAWEITE VERBINDUNGEN</li>
+                                <li class="position-relative font-secondary">MODERNE WAGEN & TECHNOLOGIE</li>
+                                <li class="position-relative font-secondary">KOSTENEFFIZIENTE LÖSUNGEN</li>
+                                <li class="position-relative font-secondary">FLEXIBLE TRANSPORTKAPAZITÄTEN</li>
+                                <li class="position-relative font-secondary">INDIVIDUELLE LOGISTIKKONZEPTE</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-5 col-lg-5">
+                                <div class="about-img-wrap position-relative z-1 mb-md-30">
+                                    <img src="assets/img/about/about-img-3.png" alt="Image" class="d-block tilt-img mx-auto">
+                                    <img src="assets/img/about/shape-1.png" alt="Shape" class="about-shape position-absolute top-0 z-n1">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 offset-xxl-1 col-lg-7 ps-xxl-3 ps-xl-4">
+                                <div class="about-content position-relative">
+                                    <h6 class="section-subtitle style-two fs-13 ls-1 font-optional fw-semibold position-relative text_para mb-20">ÜBER UNS</h6>
+                                    <h2 class="section-title style-one fw-normal text-title">Akrail <span class="fw-black">entstand aus einem einfachen Prinzip:</span> Effizient, sicher, verlässlich.</h2>
+                                    <p class="mb-28">Individuelle Lösungen, die höchsten Ansprüchen gerecht werden – darauf können Sie vertrauen.</p>
+                                    <div class="row gx-xxl-45">
+                                        <div class="col-sm-6">
+                                            <div class="feature-item position-relative">
+                                                <img src="assets/img/about/feature-icon-1.png" alt="Icon" class="feature-icon">
+                                                <h3 class="fs-16 fw-semibold">Moderne Perspektive</h3>
+                                                <p class="mb-0">Neue Ideen für effiziente und zukunftsorientierte Lösungen.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="feature-item position-relative">
+                                                <img src="assets/img/about/feature-icon-2.png" alt="Icon" class="feature-icon">
+                                                <h3 class="fs-16 fw-semibold">Qualität im Fokus</h3>
+                                                <p class="mb-0">Sorgfalt und Präzision in jedem Schritt unserer Arbeit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="feature-item position-relative">
+                                                <img src="assets/img/about/feature-icon-3.png" alt="Icon" class="feature-icon">
+                                                <h3 class="fs-16 fw-semibold">Kundennah & flexibel</h3>
+                                                <p class="mb-0">Wir passen uns den individuellen Anforderungen an.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="feature-item position-relative">
+                                                <img src="assets/img/about/feature-icon-4.png" alt="Icon" class="feature-icon">
+                                                <h3 class="fs-16 fw-semibold">Zukunft gestalten</h3>
+                                                <p>Innovative Ansätze, die nachhaltige Verbindungen schaffen.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="about.html" class="btn style-one d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Mehr über uns</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Section End -->
+
+                <!-- Service Section Start -->
+                <div id="service" class="bg-optional pt-120 pb-90 mb-120">
+                    <div class="container">
+                        <div class="row align-items-end mb-45">
+                            <div class="col-lg-7 col-md-8">
+                                <h6 style="color: #fff;" class="section-subtitle style-two d-inline-block fs-13 ls-1 font-optional fw-semibold position-relative text_para mb-25" data-cue="slideInUp">UNSER SERVICE</h6>
+                                <h2 class="section-title style-one fw-normal text-white" data-cue="slideInUp" data-delay="400">Transport <span class="fw-black">mit Präzision und Verlässlichkeit</span></h2>
+                            </div>
+                        </div>
+                        <div class="service-card-wrap style-one d-flex flex-wrap justify-content-center">
+                            <div class="service-card style-three mb-30" data-cue="slideInUp">
+                                <img src="assets/img/icons/custom-bahn.svg" alt="Icon">
+                                <h3 style="color: #fff;" class="fs-24 fw-semibold" class="text-white link-hover-primary transition">Zuverlässiger Gütertransport</h3>
+                                <p class="text-alto">Wir bewegen Waren sicher und effizient auf der Schiene – termingerecht und flexibel.</p>
+                            </div>
+                            <div class="service-card style-three mb-30" data-cue="slideInUp">
+                                <img src="assets/img/icons/custom-puzzle.svg" alt="Icon">
+                                <h3 style="color: #fff;" class="fs-24 fw-semibold" class="text-white link-hover-primary transition">Individuelle Transportlösungen</h3>
+                                <p class="text-alto">Ob große Mengen oder spezielle Anforderungen, wir finden die passende Lösung für jede Fracht.</p>
+                            </div>
+                            <div class="service-card style-three mb-30" data-cue="slideInUp">
+                                <img src="assets/img/icons/custom-eco.svg" alt="Icon">
+                                <h3 style="color: #fff;" class="fs-24 fw-semibold" class="text-white link-hover-primary transition">Nachhaltige <br> Logistik</a></h3>
+                                <p class="text-alto">Mit Schienenverkehr reduzieren wir Emissionen und schaffen umweltfreundliche Transportwege.</p>
+                            </div>
+                            <div class="service-card style-three mb-30" data-cue="slideInUp">
+                                <img src="assets/img/icons/custom-time.svg" alt="Icon">
+                                <h3 style="color: #fff;" class="fs-24 fw-semibold" class="text-white link-hover-primary transition">Transparente <br> Abläufe</a></h3>
+                                <p class="text-alto">Klare Kommunikation und volle Nachverfolgbarkeit sorgen für Vertrauen und Sicherheit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Section End -->
+
+                <!-- Move Text Start -->
+                <div class="move-text-wrapper overflow-hidden mb-120">
+                    <div class="move-text style-two position-relative z-1">
+                        <ul class="list-unstyled mb-0">
+                                <li class="position-relative font-secondary">ZUVERLÄSSIGE LIEFERZEITEN</li>
+                                <li class="position-relative font-secondary">SICHERER GÜTERTRANSPORT</li>
+                                <li class="position-relative font-secondary">NACHHALTIGE LOGISTIK</li>
+                                <li class="position-relative font-secondary">EUROPAWEITE VERBINDUNGEN</li>
+                                <li class="position-relative font-secondary">MODERNE WAGEN & TECHNOLOGIE</li>
+                                <li class="position-relative font-secondary">KOSTENEFFIZIENTE LÖSUNGEN</li>
+                                <li class="position-relative font-secondary">FLEXIBLE TRANSPORTKAPAZITÄTEN</li>
+                                <li class="position-relative font-secondary">INDIVIDUELLE LOGISTIKKONZEPTE</li>
+                        </ul>
+                    </div>
+                 </div>
+                <!-- Move Text End -->
+
+                <!-- Project Section Start -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 text-center">
+                            <h6 class="section-subtitle style-two d-inline-block text-center fs-13 ls-1 font-optional fw-semibold position-relative text-para mb-16" data-cue="slideInUp">AKRAIL</h6>
+                            <h2 class="section-title style-one fw-normal text-title mb-35" data-cue="slideInUp" data-delay="300">Von Planung zu Präzision <span class="fw-black">Erfolgreicher Schienentransport</span></h2>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-slider-three swiper" data-cue="slideInUp">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-card style-three bg-1 position-relative">
+                                <span style="color: #fff;" class="project-counter text-center fw-semibold d-block lh-1 transition">01</span>
+                                <h3 class="fs-24 fw-semibold mb-0 transition" style="color: #fff;" class="text-title hover-text-primary transition">Hannover - Duisburg</a></h3>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card style-three bg-2 position-relative overflow-hidden">
+                                <span style="color: #fff;" class="project-counter text-center fw-semibold d-block lh-1 transition">02</span>
+                                <h3 class="fs-24 fw-semibold mb-0 transition" style="color: #fff;" class="text-title hover-text-primary transition">Mannheim - Paris</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card style-three bg-3 position-relative overflow-hidden">
+                                <span style="color: #fff;" class="project-counter text-center fw-semibold d-block lh-1 transition">03</span>
+                                <h3 class="fs-24 fw-semibold mb-0 transition" style="color: #fff;" class="text-title hover-text-primary transition">Düsseldorf - Hamburg</a></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card style-three bg-4 position-relative overflow-hidden">
+                                <span style="color: #fff;" class="project-counter text-center fw-semibold d-block lh-1 transition">04</span>
+                                <h3 class="fs-24 fw-semibold mb-0 transition" style="color: #fff;" class="text-title hover-text-primary transition">Koblenz - Wien</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Section End -->
+
+                <!-- Merkmale Section Start -->
+                <div id="merkmale" class="feature-area style-three position-relative z-2 pt-120">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1 text-center">
+                                <h6 class="section-subtitle style-two d-inline-block fs-13 ls-1 font-optional fw-semibold position-relative text_para mb-20" data-cue="slideInUp">UNSERE MERKMALE</h6>
+                                <h2 class="section-title style-one fw-normal text-title px-xxl-5 mb-40" data-cue="slideInUp" data-delay="300">Einzigartige <span class="fw-black">Stärken, die uns auszeichnen</span></h2>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs list-unstyled feature-tablist d-flex flex-wrap align-items-center justify-content-between mb-40" role="tablist" data-cue="slideInUp">
+                            <li class="nav-item border-0">
+                                <button class="nav-link border-0 active" data-bs-toggle="tab" data-bs-target="#tab_1" type="button" role="tab">Effiziente Abläufe</button>
+                            </li>
+                            <li class="nav-item border-0">
+                                <button class="nav-link border-0" data-bs-toggle="tab" data-bs-target="#tab_2" type="button" role="tab">Moderner Technik</button>
+                            </li>
+                            <li class="nav-item border-0">
+                                <button class="nav-link border-0" data-bs-toggle="tab" data-bs-target="#tab_3" type="button" role="tab">Engagierte Profis</button>
+                            </li>
+                            <li class="nav-item border-0">
+                                <button class="nav-link border-0" data-bs-toggle="tab" data-bs-target="#tab_4" type="button" role="tab">Kundenfokus</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content feature-tab-content" data-cue="slideInUp">
+                            <div class="tab-pane fade show active" id="tab_1" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6 pe-xxl-0">
+                                        <div class="feature-content mb-md-30">
+                                            <p class="mb-35">Bei uns liegt der Unterschied im Detail: Mit Erfahrung, Präzision und moderner Technik sorgen wir dafür, dass jeder Transport zuverlässig, effizient und nachhaltig abgewickelt wird.</p>
+                                            <ul class="feature-timeline list-unstyled mb-0 w-75 pe-xxl-5">
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold ">01</span>Optimierte Routenplanung für minimale Transportzeiten</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold ">02</span>Digitale Systeme für transparenz und Flexibilität</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold ">03</span>Reibungslose Koordination aller Logistikschritte</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold ">04</span>Schnelle Reaktion auf kurzfristige Kundenanforderungen</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6 ps-xxl-5">
+                                        <div class="feature-img-wrap position-relative z-1">
+                                            <img src="assets/img/about/feature-img-1.jpg" alt="Image" class="round-20">
+                                            <div class="exp-box bg-white round-10 move-bottom position-absolute d-flex flex-column align-items-center justify-content-center start-0 z-1">
+                                                <span class="fav-icon d-flex flex-column align-items-center justify-content-center"><img src="assets/img/about/fav-icon.png" alt="Icon" style="width: 100px; height: 100px;"></span>
+                                                <h6 class="fs-13 fw-semibold text-para ls-1 text-center mb-0"><span class="font-secondary fw-black text-title d-block ls-0">3</span>JAHRE ERFAHRUNG</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_2" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6 pe-xxl-0">
+                                        <div class="feature-content mb-md-30">
+                                            <p class="mb-35">Bei uns liegt der Unterschied im Detail: Mit Erfahrung, Präzision und moderner Technik sorgen wir dafür, dass jeder Transport zuverlässig, effizient und nachhaltig abgewickelt wird. </p>
+                                            <ul class="feature-timeline list-unstyled mb-0 w-75 pe-xxl-5">
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">01</span>Persönlicher Einsatz und Leidenschaft in jedem Auftrag</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">02</span>Fachwissen und Erfahrung aus der täglichen Praxis</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">03</span>Kontinuierliche Schulungen für höchste Standards</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">04</span>Teamarbeit, die Verlässlichkeit und Effizienz garantiert</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6 ps-xxl-5">
+                                        <div class="feature-img-wrap position-relative z-1">
+                                            <img src="assets/img/about/feature-img-2.jpg" alt="Image" class="round-20">
+                                            <div class="exp-box bg-white round-10 move-bottom position-absolute d-flex flex-column align-items-center justify-content-center start-0 z-1">
+                                                <span class="fav-icon d-flex flex-column align-items-center justify-content-center"><img src="assets/img/about/fav-icon.png" alt="Icon" style="width: 100px; height: 100px;"></span>
+                                                <h6 class="fs-13 fw-semibold text-para ls-1 text-center mb-0"><span class="font-secondary fw-black text-title d-block ls-0">3</span>JAHRE ERFAHRUNG</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_3" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6 pe-xxl-0">
+                                        <div class="feature-content mb-md-30">
+                                            <p class="mb-35">Bei uns liegt der Unterschied im Detail: Mit Erfahrung, Präzision und moderner Technik sorgen wir dafür, dass jeder Transport zuverlässig, effizient und nachhaltig abgewickelt wird. </p>
+                                            <ul class="feature-timeline list-unstyled mb-0 w-75 pe-xxl-5">
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">01</span>Fachwissen und Erfahrung aus der täglichen Praxis</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">02</span>Persönlicher Einsatz und Leidenschaft in jedem Auftrag</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">03</span>Kontinuierliche Weiterbildung für höchste Standards</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">04</span>Teamarbeit, die Effizienz und Verlässlichkeit garantiert</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6 ps-xxl-5">
+                                        <div class="feature-img-wrap position-relative z-1">
+                                            <img src="assets/img/about/feature-img-4.jpg" alt="Image" class="round-20">
+                                            <div class="exp-box bg-white round-10 move-bottom position-absolute d-flex flex-column align-items-center justify-content-center start-0 z-1">
+                                                <span class="fav-icon d-flex flex-column align-items-center justify-content-center"><img src="assets/img/about/fav-icon.png" alt="Icon" style="width: 100px; height: 100px;"></span>
+                                                <h6 class="fs-13 fw-semibold text-para ls-1 text-center mb-0"><span class="font-secondary fw-black text-title d-block ls-0">3</span>JAHRE ERFAHRUNG</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab_4" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xxl-5 col-lg-6 pe-xxl-0">
+                                        <div class="feature-content mb-md-30">
+                                            <p class="mb-35">Bei uns liegt der Unterschied im Detail: Mit Erfahrung, Präzision und moderner Technik sorgen wir dafür, dass jeder Transport zuverlässig, effizient und nachhaltig abgewickelt wird. </p>
+                                            <ul class="feature-timeline list-unstyled mb-0 w-75 pe-xxl-5">
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">01</span>Alle Abläufe richten sich nach den Bedürfnissen unserer Kunden</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">02</span>Persönliche Betreuung für individuelle Lösungen</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">03</span>Klare Kommunikation und transparente Prozesse</li>
+                                                <li class="position-relative fs-xxl-18 fw-medium text-title"><span class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-white fs-15 fw-semibold">04</span>Verlässliche Umsetzung und termingerechte Ergebnisse</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-7 col-lg-6 ps-xxl-5">
+                                        <div class="feature-img-wrap position-relative z-1">
+                                            <img src="assets/img/about/feature-img-5.jpg" alt="Image" class="round-20">
+                                            <div class="exp-box bg-white round-10 move-bottom position-absolute d-flex flex-column align-items-center justify-content-center start-0 z-1">
+                                                <span class="fav-icon d-flex flex-column align-items-center justify-content-center"><img src="assets/img/about/fav-icon.png" alt="Icon" style="width: 100px; height: 100px;"></span>
+                                                <h6 class="fs-13 fw-semibold text-para ls-1 text-center mb-0"><span class="font-secondary fw-black text-title d-block ls-0">3</span>JAHRE ERFAHRUNG</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Merkmale Section End -->
+
+                <!-- Brand Partner Start -->
+                <div class="brand-slider swiper ptb-120">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-1.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-2.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-3.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-4.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-5.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-6.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-7.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-1.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-2.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-3.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-4.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-5.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-logo">
+                                <img src="assets/img/brand/brand-logo-6.svg" alt="Brand Logo" class="d-block mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brand Partner End -->
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-two bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Menü</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="#werwirsind">Wer wir sind</a></li>
+                                        <li><a href="#about">Über uns</a></li>
+                                        <li><a href="#service">Service</a></li>
+                                        <li><a href="#merkmale">Merkmale</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Akrail</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><a href="impressum.html">Impressum</a></li>
+                                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="mailto:info@akrail.de">info@akrail.de</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:49177331633">+49 177 3316 33</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>A</span>
+                                    <span>K</span>
+                                    <span>R</span>
+                                    <span>A</span>
+                                    <span>I</span>
+                                    <span>L</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10">
+                                    <span class="text-alto fw-semibold me-2">Folge uns: </span>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-7 text-md-end text-center">
+                                <p class="copyright-text mb-0 text-white"><i class="ri-copyright-line"></i><span class="text_secondary fw-medium">Akril</span> 2025 </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <div id="progress-wrap" class="progress-wrap style-one">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </div>
+
+        <!-- Link of JS files -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/megamenu.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/fslightbox.js"></script>
+        <script src="assets/js/gsap.min.js"></script>
+        <script src="assets/js/scrollTrigger.min.js"></script>
+        <script src="assets/js/lenis.min.js"></script>
+        <script src="assets/js/scrollToPlugin.js"></script>
+        <script src="assets/js/SplitText.min.js"></script>
+        <script src="assets/js/customEase.js"></script>
+        <script src="assets/js/scrollcue.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
