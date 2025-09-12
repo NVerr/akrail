@@ -66,13 +66,7 @@
                                     </div>
                                     <ul class="menu-section p-0 mb-0 lh-1">
                                         <li class="menu-item-has-children">
-                                            <li><a href="/index.html#werwirsind">Wer wir sind</a></li>
-                                           <li class="menu-item-has-children">
-                                            <li><a href="/index.html#about">Über uns</a></li>
-                                            <li class="menu-item-has-children">
-                                            <li><a href="/index.html#service">Service</a></li>
-                                            <li class="menu-item-has-children">
-                                            <li><a href="/index.html#merkmale">Merkmale</a></li>
+                                            <li><a href="about.html">Über uns</a></li>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <li><a href="careers.html">Karriere</a></li>
@@ -369,77 +363,6 @@
                 </div>
                 <!-- Why Choose Us Section End -->
 
-                <!-- Brand Partner Start -->
-                <div class="brand-slider swiper ptb-120">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-1.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-2.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-3.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-4.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-5.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-6.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-7.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-1.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-2.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-3.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-4.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-5.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-logo">
-                                <img src="assets/img/brand/brand-logo-6.svg" alt="Brand Logo" class="d-block mx-auto">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Brand Partner End -->
 
                 <!-- Footer Section Start -->
                 <footer class="footer-area style-two bg-optional position-relative z-1 pt-120">
@@ -449,10 +372,10 @@
                                 <div class="footer-widget mb-30" data-cue="slideInUp">
                                     <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Menü</h4>
                                     <ul class="footer-menu style-one list-unstyled mb-0">
-                                        <li><a href="/index.html#werwirsind">Wer wir sind</a></li>
-                                        <li><a href="/index.html#about">Über uns</a></li>
-                                        <li><a href="/index.html#service">Service</a></li>
-                                        <li><a href="/index.html#merkmale">Merkmale</a></li>
+                                        <li><a href="index.html">Startseite</a></li>
+                                        <li><a href="about.html">Über uns</a></li>
+                                        <li><a href="careers.html">Karriere</a></li>
+                                        <li><a href="contact.html">Kontakt</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -522,5 +445,16 @@
         <script src="assets/js/customEase.js"></script>
         <script src="assets/js/scrollcue.min.js"></script>
         <script src="assets/js/main.js"></script>
+         <script>
+        // Menü automatisch schließen, wenn ein Link geklickt wird
+        document.querySelectorAll('.menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+            const closeBtn = document.querySelector('.menu-mobile-close');
+            if (closeBtn) {
+                closeBtn.click();
+            }
+            });
+        });
+        </script>
     </body>
 </html>

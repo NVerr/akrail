@@ -66,13 +66,7 @@
                                     </div>
                                     <ul class="menu-section p-0 mb-0 lh-1">
                                         <li class="menu-item-has-children">
-                                            <li><a href="/index.html#werwirsind">Wer wir sind</a></li>
-                                           <li class="menu-item-has-children">
-                                            <li><a href="/index.html#about">Über uns</a></li>
-                                            <li class="menu-item-has-children">
-                                            <li><a href="/index.html#service">Service</a></li>
-                                            <li class="menu-item-has-children">
-                                            <li><a href="/index.html#merkmale">Merkmale</a></li>
+                                            <li><a href="about.html">Über uns</a></li>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <li><a href="careers.html">Karriere</a></li>
@@ -187,26 +181,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="job-card style-one position-relative img-hover-zoom z-1 round-10 mb-30">
-                                <div class="job-img position-relative overflow-hidden img-zoom z-1 round-10">
-                                    <img src="assets/img/career/career-3.jpg" alt="Image" class="position-absolute top-0 start-0 w-100 h-100 transition round-10">
-                                    <img src="assets/img/career/career-3.jpg" alt="Image" class="transition round-10">
-                                    <div class="job-salary fs-15 text-title bg-white position-absolute end-0">Gehalt: <span class="fw-bold">25K</span></div>
-                                </div>
-                                <div class="job-info">
-                                    <h3 class="fs-24 fw-bold"><a href="career-single.html" class="text-title link-hover-primary transition">Ausbildung zum Lokführer (M/W/D)</a></h3>
-                                    <ul class="job-metainfo list-unstyled">
-                                        <li class="position-relative"><img src="assets/img/icons/pin-orange-2.svg" alt="Icon"><span class="fw-medium text-title me-1">Ort:</span>Duisburg, DE</li>
-                                        <li class="position-relative"><img src="assets/img/icons/bag-2.svg" alt="Icon"><span class="fw-medium text-title me-1">Art:</span> Ausbildung</li>
-                                        <li class="position-relative"><img src="assets/img/icons/user-2.svg" alt="Icon"><span class="fw-medium text-title me-1">Erfahrung</span>keine</li>
-                                    </ul>
-                                    <div class="text-center">
-                                        <a href="error-404.html" class="link style-one fw-semibold">Bewirb dich jetzt <img src="assets/img/icons/right-arrow-small-primary.svg" alt="Icon"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                    <!-- <ul class="page-nav pagination justify-content-center mb-0 mt-lg-5">
                         <li class="page-item">
@@ -234,10 +208,10 @@
                                 <div class="footer-widget mb-30" data-cue="slideInUp">
                                     <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Menü</h4>
                                     <ul class="footer-menu style-one list-unstyled mb-0">
-                                        <li><a href="#werwirsind">Wer wir sind</a></li>
-                                        <li><a href="#about">Über uns</a></li>
-                                        <li><a href="#service">Service</a></li>
-                                        <li><a href="#merkmale">Merkmale</a></li>
+                                        <li><a href="index.html">Startseite</a></li>
+                                        <li><a href="about.html">Über uns</a></li>
+                                        <li><a href="careers.html">Karriere</a></li>
+                                        <li><a href="contact.html">Kontakt</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -307,5 +281,16 @@
         <script src="assets/js/customEase.js"></script>
         <script src="assets/js/scrollcue.min.js"></script>
         <script src="assets/js/main.js"></script>
+         <script>
+        // Menü automatisch schließen, wenn ein Link geklickt wird
+        document.querySelectorAll('.menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+            const closeBtn = document.querySelector('.menu-mobile-close');
+            if (closeBtn) {
+                closeBtn.click();
+            }
+            });
+        });
+        </script>
     </body>
 </html>

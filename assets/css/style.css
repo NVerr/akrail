@@ -19,7 +19,6 @@ This files table contents are outlined below>>>>>
 6.  Pagination CSS
 7.  Breadcrumb CSS
 8.  Hero CSS
-9. Icon CSS
 ----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&display=swap");
 :root {
@@ -2475,8 +2474,8 @@ body {
   content: "";
   width: 115px;
   height: 100%;
-  border-top: 1px solid rgba(255, 94, 20, 0.5);
-  border-left: 1px solid rgba(255, 94, 20, 0.5);
+  border-top: 1px solid rgba(42, 67, 78, 0.5);
+  border-left: 1px solid rgba(42, 67, 78, 0.5);
   border-radius: 20px 0 0 0;
 }
 .feature-card.style-three .br-one:after {
@@ -2486,8 +2485,8 @@ body {
   content: "";
   width: 115px;
   height: 100%;
-  border-top: 1px solid rgba(255, 94, 20, 0.5);
-  border-right: 1px solid rgba(255, 94, 20, 0.5);
+  border-top: 1px solid rgba(42, 67, 78, 0.5);
+  border-right: 1px solid rgba(42, 67, 78, 0.5);
   border-radius: 0 20px 0 0;
 }
 .feature-card.style-three .br-two {
@@ -2503,8 +2502,8 @@ body {
   content: "";
   width: 115px;
   height: 100%;
-  border-bottom: 1px solid rgba(255, 94, 20, 0.5);
-  border-left: 1px solid rgba(255, 94, 20, 0.5);
+  border-bottom: 1px solid rgba(42, 67, 78, 0.5);
+  border-left: 1px solid rgba(42, 67, 78, 0.5);
   border-radius: 0 0 0 20px;
 }
 .feature-card.style-three .br-two:after {
@@ -2514,8 +2513,8 @@ body {
   content: "";
   width: 115px;
   height: 100%;
-  border-bottom: 1px solid rgba(255, 94, 20, 0.5);
-  border-right: 1px solid rgba(255, 94, 20, 0.5);
+  border-bottom: 1px solid rgba(42, 67, 78, 0.5);
+  border-right: 1px solid rgba(42, 67, 78, 0.5);
   border-radius: 0 0 20px 0;
 }
 .feature-card.style-three .feature-img {
